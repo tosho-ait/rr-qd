@@ -1,0 +1,19 @@
+{
+  "name": "rr-qd",
+  "version": "0.0.1",
+  "description": "react redux quick and dirty",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosho-ait/rr-qd.git"
+  },
+  "author": "tosho-ait",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tosho-ait/rr-qd/issues"
+  },
+  "homepage": "https://github.com/tosho-ait/rr-qd#readme"
+}
