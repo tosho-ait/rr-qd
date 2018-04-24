@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env",
+    "es2015",
+    "react",
+    "react-hmre"
+  ],
+  "plugins": [
+    "react-html-attrs",
+    "transform-object-rest-spread"
+  ]
+}
