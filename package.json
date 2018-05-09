@@ -18,9 +18,13 @@
   },
   "main": "lib/index.js",
   "homepage": "https://github.com/tosho-ait/rr-qd#readme",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-api-middleware": "^2.3.0",
