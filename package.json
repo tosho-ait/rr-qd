@@ -1,6 +1,6 @@
 {
   "name": "rr-qd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react redux quick and dirty",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +19,8 @@
   "main": "lib/index.js",
   "homepage": "https://github.com/tosho-ait/rr-qd#readme",
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -39,6 +40,8 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   }

@@ -21,12 +21,17 @@ module.exports = {
                         presets: ['env']
                     }
                 }
-            }
+            },
+            {
+                test: /\.css$/,
+                loader: "style-loader!css-loader",
+                include: path.resolve(__dirname, 'src'),
+            },
         ]
     },
     externals: {
         "react": true,
-        "react-bootstrap": true,
+        "moment": true,
         "react-dom": true,
         "react-redux": true,
         "redux": true,

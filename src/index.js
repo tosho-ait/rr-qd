@@ -1,12 +1,16 @@
-import fancyInit from './fancyInit';
-import * as apiDeclare from './actions/apiDeclare';
+import fancyInit from './fancyInit'
+import * as apiDeclare from './actions/apiDeclare'
 
-import auth from './reducers/auth';
-import lists from './reducers/lists';
-import props from './reducers/props';
-import router from './reducers/router';
-import track from './reducers/track';
+import auth from './reducers/auth'
+import lists from './reducers/lists'
+import props from './reducers/props'
+import router from './reducers/router'
+import track from './reducers/track'
 
-let reducers = {auth, lists, props, router, track};
+//import RrAction from './components/RrAction'
+//import RrRoute from './components/RrRoute'
+import RrSetMomentLocale from './components/RrSetMomentLocale'
 
-export {fancyInit, apiDeclare, reducers};
+let reducers = {auth, lists, props, router, track}
+
+export {fancyInit, apiDeclare, reducers, RrSetMomentLocale}
