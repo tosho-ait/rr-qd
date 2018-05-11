@@ -1,41 +1,36 @@
-var path = require('path')
+const path = require("path")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-    entry: './src/index.js',
+    entry: path.join(__dirname, "src/docs"),
     output: {
-        path: path.resolve(__dirname, 'lib'),
-        filename: 'index.js',
-        library: 'rr-qd',
-        libraryTarget: 'umd',
-        umdNamedDefine: true
+        path: path.join(__dirname, "docs"),
+        filename: "bundle.js"
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
-                include: path.resolve(__dirname, 'src'),
-                exclude: /(node_modules|bower_components|lib)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env']
-                    }
-                }
+                test: /\.(js|jsx)$/,
+                use: "babel-loader",
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
-                loader: "style-loader!css-loader",
-                include: path.resolve(__dirname, 'src'),
-            },
+                use: ["style-loader", "css-loader"]
+            }
         ]
     },
-    externals: {
-        "react": true,
-        "moment": true,
-        "react-dom": true,
-        "react-redux": true,
-        "redux": true,
-        "redux-api-middleware": true,
-        "redux-thunk": true
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, "src/docs/index.html")
+        })
+    ],
+    resolve: {
+        extensions: [".js", ".jsx"]
+    },
+    devServer: {
+        contentBase: path.join(__dirname, "docs"),
+        port: 8000,
+        stats: "minimal"
     }
-}
+};

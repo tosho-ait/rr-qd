@@ -1,6 +1,8 @@
-.idea/
-.gitignore
-.npmignore
-node_modules
+docs
+src
 .babelrc
 webpack.config.js
+.idea/
+.gitignore
+node_modules
+.babelrc
