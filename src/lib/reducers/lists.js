@@ -1,4 +1,4 @@
-import {hasAugmentLogout, hasAugmentLogin} from '../actions/apiDeclare'
+import {hasAugmentLogout, hasAugmentLogin} from '../actions/rrAccessApi'
 
 let initialLists = {lists: {}}
 

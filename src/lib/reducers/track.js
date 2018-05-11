@@ -1,4 +1,4 @@
-import {hasAugmentLogout, hasAugmentLogin} from "../actions/apiDeclare"
+import {hasAugmentLogout, hasAugmentLogin} from "../actions/rrAccessApi"
 
 const STALE_YES = 1
 const STALE_LOAD = 2

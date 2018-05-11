@@ -1,5 +1,5 @@
 import rrInit from './rrInit'
-import * as apiDeclare from './actions/apiDeclare'
+import * as rrAccessApi from './actions/rrAccessApi'
 
 import auth from './reducers/auth'
 import lists from './reducers/lists'
@@ -13,4 +13,4 @@ import RrSetMomentLocale from './components/RrSetMomentLocale'
 
 let reducers = {auth, lists, props, router, track}
 
-export {rrInit, apiDeclare, reducers, RrAction, RrRoute, RrSetMomentLocale}
+export {rrInit, rrAccessApi, reducers, RrAction, RrRoute, RrSetMomentLocale}
