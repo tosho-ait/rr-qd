@@ -11,8 +11,20 @@ import "./styles.css";
 
 function Demo() {
     return <div>
-        <h1>Demo with examples of the component</h1>
-        <RrAction>do something</RrAction>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">RR-QD Demo Page</a>
+                </div>
+            </div>
+        </nav>
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <h3>RrAction component</h3>
+            <RrAction classes="btn btn-default">do something</RrAction>
+        </div>
     </div>
 }
 
