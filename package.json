@@ -2,7 +2,13 @@
   "name": "rr-qd",
   "version": "0.0.2",
   "description": "React Redux - Quick and Dirty",
-  "main": "lib/index.js",
+  "license": "MIT",
+  "author": "Tosho Ivanov <tosho-ait@gmail.com>",
+  "homepage": "https://github.com/tosho-ait/rr-qd#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosho-ait/rr-qd.git"
+  },
   "scripts": {
     "dev": "concurrently \"npm run lib:watch\" \"npm run docs\"",
     "lib": "babel src/lib -d lib --copy-files",
@@ -10,8 +16,7 @@
     "docs": "webpack-dev-server --mode development",
     "docs:prod": "webpack --mode production"
   },
-  "keywords": [],
-  "license": "MIT",
+  "main": "lib/index.js",
   "peerDependencies": {
     "react": "^15.3.0 || ^16.2.0",
     "react-dom": "^15.3.0 || ^16.2.0",
@@ -43,11 +48,5 @@
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
-  },
-  "author": "Tosho Ivanov <tosho-ait@gmail.com>",
-  "homepage": "https://github.com/tosho-ait/rr-qd#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tosho-ait/rr-qd.git"
   }
 }
