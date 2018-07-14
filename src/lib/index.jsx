@@ -9,8 +9,9 @@ import track from './reducers/track'
 
 import RrAction from './components/RrAction'
 import RrRoute from './components/RrRoute'
+import RrStale from './components/RrStale'
 import RrSetMomentLocale from './components/RrSetMomentLocale'
 
 let reducers = {auth, lists, props, router, track}
 
-export {rrInit, rrAccessApi, reducers, RrAction, RrRoute, RrSetMomentLocale}
+export {rrInit, rrAccessApi, reducers, RrAction, RrRoute, RrStale, RrSetMomentLocale}
