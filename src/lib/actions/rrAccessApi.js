@@ -134,9 +134,16 @@ export let apiCall = ({name, endpoint, method, trackRequest, request, response, 
         }
         if (trackRequest) {
             // keep status of the BE call in the loader reducer
-            types[0].meta.trackReq = trackRequest
-            types[1].meta.trackRsp = trackRequest
-            types[2].meta.trackRsp = trackRequest
+            if (trackRequest === true) {
+                // use name as default track key
+                types[0].meta.trackReq = name
+                types[1].meta.trackRsp = name
+                types[2].meta.trackRsp = name
+            } else {
+                types[0].meta.trackReq = trackRequest
+                types[1].meta.trackRsp = trackRequest
+                types[2].meta.trackRsp = trackRequest
+            }
             let key = Math.floor(Math.random() * 1000000)
             types[0].meta.trackKey = key
             types[1].meta.trackKey = key

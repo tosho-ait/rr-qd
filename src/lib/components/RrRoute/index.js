@@ -1,7 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-// In short:
 // Use this to do the routing of the application. Show/Hide children based on properties from route and auth.
 // If the provided properties "match" to the current route/auth, display all children without the fallBack one. Otherwise display only the fallBack
 //
@@ -13,7 +12,7 @@ import {connect} from 'react-redux'
 // isAuthenticated - Show content on if auth.isAuthenticated.
 // authConfirmed - Show content on if auth.confirmed. Confirmation check must be triggered somewhere else.
 // childMatches - If any of the child RrRoute components "matches" (will be shown) then show all children. Show the fallBack otherwise.
-// overridePublic - Override the current URL in the router reducer
+// overridePublic - Override the current URL in the router reducer.
 
 class RrRoute extends React.Component {
 
