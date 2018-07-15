@@ -7,5 +7,5 @@ Note, at the moment it is just a side project of mine. It is quite unpolished an
 
 If you want to know more, you can take a look at the [example application](https://github.com/tosho-ait/rr-qd-example-auth/blob/master/README.md) 
 
-Todor Ivanov
+Todor Ivanov <br>
 Developer
