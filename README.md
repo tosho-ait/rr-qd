@@ -8,4 +8,3 @@ Note, at the moment this is just a side project of mine. It is quite unpolished 
 If you want to know more, you can take a look at the [example application](https://github.com/tosho-ait/rr-qd-example-auth/blob/master/README.md) 
 
 Tosho Ivanov <br>
-Developer
