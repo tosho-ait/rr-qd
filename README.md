@@ -5,7 +5,7 @@ It is intended to handle routing, authentication and authorisation, backend call
 
 Note, at the moment this is just a side project of mine. It is quite unpolished and undocumented, sorry for that. :-(
 
-If you want to know more, you can take a look at the [example application](https://github.com/tosho-ait/rr-qd-example-auth/blob/master/README.md).
+If you want to know more, you can take a look at the [example application](https://github.com/tosho-ait/rr-qd-example-auth).
 
 
 ## Author
