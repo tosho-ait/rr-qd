@@ -8,6 +8,7 @@ import {connect} from "react-redux"
 // target - API call to track.
 // staleByDefault - Execute onStale() if there is no status present at init of the component.
 // callOnInit - Execute API call on init.
+// onStale - Execute custom function when stale.
 
 class RrStale extends React.Component {
 
@@ -37,7 +38,9 @@ class RrStale extends React.Component {
 
     _onStale() {
         if (this.props.target) {
-            if (this.props.target.action) {
+            if (this.props.onStale) {
+                this.props.onStale(this.props.dispatch, this.props.target)
+            } else if (this.props.target.action) {
                 // do the API call
                 this.props.dispatch(this.props.target.action())
             } else {
