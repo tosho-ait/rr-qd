@@ -73,7 +73,7 @@ class RrAction extends React.Component {
         if (this.props.disabled) {
             classes += this.props.disabledClass ? (" " + this.props.disabledClass) : " disabled"
         }
-        let toReturn = <a onClick={this.onClick} class={'rr-qd-action ' + classes} style={style} href={this.props.link}>
+        let toReturn = <a onClick={this.onClick} className={'rr-qd-action ' + classes} style={style} href={this.props.link}>
             {this.props.label && <span>&nbsp;</span>} {this.props.label} {this.props.children}
             { confirmComponent && confirmComponent({
                 visible: this.state.showConfirmComponent,
