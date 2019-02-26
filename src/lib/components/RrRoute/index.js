@@ -34,7 +34,7 @@ class RrRoute extends React.Component {
             } else if (children.length === 1) {
                 return children[0]
             } else {
-                return <div class={this.props.classes}>{children}</div>
+                return <div className={this.props.classes}>{children}</div>
             }
         }
     }

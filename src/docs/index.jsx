@@ -11,10 +11,10 @@ import "./styles.css";
 
 function Demo() {
     return <div>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">RR-QD Demo Page</a>
+        <nav className="navbar navbar-inverse navbar-fixed-top">
+            <div className="container">
+                <div className="navbar-header">
+                    <a className="navbar-brand" href="#">RR-QD Demo Page</a>
                 </div>
             </div>
         </nav>
